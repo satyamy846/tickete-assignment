@@ -11,8 +11,8 @@ const details = {
 
 export default function ConfirmPay() {
   return (
-    <div className='checkout-container p-10 flex justify-between'>
-        <div className='payment-details-container basis-full px-7'>
+    <div className='checkout-container p-10 flex justify-between sm:flex-wrap-reverse'>
+        <div className='payment-details-container sm:basis-full md:flex-9/12 px-7'>
             <h2 className='font-roboto font-semibold text-4xl '>Confirm & Pay</h2>
             <div className="ticket-cancellation-container flex justify-between p-5 my-10 bg-slate-200">
                 <div className=' flex flex-col gap-2'>
@@ -46,9 +46,9 @@ export default function ConfirmPay() {
                   
             </div>
         </div>
-        <div className='payment-card-container lg:w-3/12 md:w-1/12 sm:w-1/12'>
+        <div className='payment-card-container sm:basis-full md:flex-3/12'>
             <div className='container bg-slate-400 w-full h-[866px] rounded-lg shadow-md'>
-
+                    <h2>sfsdhfskjdfsdkjf</h2>
             </div>
         </div>
     </div>
