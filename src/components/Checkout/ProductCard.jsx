@@ -1,0 +1,76 @@
+import { BsFillPeopleFill, BsTicketPerforatedFill } from "react-icons/bs";
+import { IoIosTime, IoMdAdd } from "react-icons/io";
+import { MdOutlineDateRange } from "react-icons/md";
+import { RiShoppingBagFill } from "react-icons/ri";
+import { Carousel } from "react-responsive-carousel";
+
+
+export default function ProductCard() {
+  return (
+    <>
+        <div className='payment-card-container sm:basis-full md:flex-3/12'>
+            <div className='container  w-fit h-fit border rounded-lg shadow-md p-5'>
+                    <div className="product-details">
+                        <Carousel>
+                        <div className="product-image">
+                            
+                            <div>
+
+                            <img src="https://images.unsplash.com/photo-1707129901265-c5bfee67a60b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            </div>
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1682695795798-1b31ea040caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            </div>
+                        </div>
+                        </Carousel>
+                        <div className="product-content">
+                            <div className="rating">
+                                <p>{`⭐4.9(4.5k) <category>`}</p>
+                            </div>
+                            <p>Amsterdam open boat canal cruise - Live Guiye - from Anne Frank Housef</p>
+                            <div className="booking-summary">
+                                <div>
+                                <BsTicketPerforatedFill />
+                                    <p>{`<ticket type - variant>`}</p>
+                                </div>
+                                <div>
+                                <MdOutlineDateRange />
+                                    <div>
+                                        <p>{`<day>, <month> <date>`}</p>
+                                        <p>{`Duration: <duration>`}</p>
+                                    </div>
+                                </div>
+                                <div>
+                                <IoIosTime/>
+                                    <div>
+                                        <p>{`<time>`}</p>
+                                        <p>{`Operating hours: <time> to <time>`}</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <BsFillPeopleFill/>
+                                    <p>{`5 guests`}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="payment-summary flex justify-between">
+                        <p>View payment summary</p>
+                        <IoMdAdd />
+                    </div>
+                    <hr />
+                    <div className="total-amount-container">
+                        <div className="total-payment-info-bottom flex flex-col justify-between gap-5">
+                            <p className="font-light">By clicking “confirm & pay”, you agree to Tickete’s general terms and conditions and cancellation policy.</p>
+                            <button 
+                            className="bg-black border rounded-lg text-white h-[56px] w-[220px] flex justify-center items-center"> 
+                            <RiShoppingBagFill className="inline mx-1"/>Confirm & Pay
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </>
+  )
+}
