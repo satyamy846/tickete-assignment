@@ -37,8 +37,8 @@ const payment_mode = {
 
 export default function ConfirmPay() {
   return (
-    <div className='checkout-container p-10 flex justify-between sm:flex-wrap-reverse'>
-        <div className='payment-details-container sm:basis-full md:flex-9/12 px-7'>
+    <div className='checkout-container p-10 flex justify-between flex-wrap-reverse lg:flex-row'>
+        <div className='payment-details-container sm:basis-full md:flex-9/12 px-7 mt-8'>
             <h2 className='font-roboto font-semibold text-4xl '>Confirm & Pay</h2>
             <div className="ticket-cancellation-container flex justify-between p-5 my-10 bg-slate-200">
                 <div className=' flex flex-col gap-2'>
@@ -180,7 +180,7 @@ export default function ConfirmPay() {
                 </div>
             </div>
         </div>
-        
+        {/* Right side Payment card container */}
         <div className='payment-card-container sm:basis-full md:flex-3/12'>
             <div className='container  w-full h-[866px] border rounded-lg shadow-md p-5'>
                     <div className="product-details">
