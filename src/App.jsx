@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Headers/Navbar/Navbar";
 import UserMessage from "./components/Headers/SaleReminder/UserMessage";
 
+
 export default function App() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function App() {
       <ConfirmPay/>
       <FAQ/>
       <Footer/>
+
     </>
   )
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { CiCircleInfo, CiCreditCard1 } from 'react-icons/ci'
 import { FaCcApplePay, FaCcDinersClub, FaCcMastercard, FaCcVisa, FaCircle, FaGooglePay } from 'react-icons/fa6'
 import { IoMdInformationCircle } from 'react-icons/io'

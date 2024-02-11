@@ -29,7 +29,7 @@ export default function ConfirmPay() {
                         <IoMdInformationCircle />
                     </div>
                 </div>
-
+                {/* User information form */}
                 <hr />
                 <UserDeatils />
                 <hr />
