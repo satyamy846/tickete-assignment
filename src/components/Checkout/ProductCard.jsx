@@ -24,7 +24,9 @@ export default function ProductCard() {
         <div className='payment-card-container sm:basis-full md:flex-3/12'>
             <div className='w-fit h-fit border rounded-lg shadow-md p-5 flex flex-col gap-2'>
                     <div className="product-details">
+                        {/* <div className="product-image w-[356px] h-[198px]">
                         <Carousel images={images}/>
+                        </div> */}
                         <div className="product-content ">
                             <div className="rating">
                                 <span>{`⭐4.9(4.5k)`}</span> <span className="font-light text-sm">{`<category>`}</span>
